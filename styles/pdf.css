@@ -1,0 +1,20 @@
+#fileCanvas{
+    iframe{
+        position: relative;
+        width: calc(var(--iframe-width--) - 20px);
+        height: calc(100vh - 20px);
+        border: none;
+    }
+}
+
+.fs-b2{
+    background-color: var(--very-light-grey--);
+    border-radius: var(--canvas-border-radius--);
+    margin: 10px 0px;
+}
+
+iframe{
+    border-radius: var(--canvas-border-radius--);
+}
+
+

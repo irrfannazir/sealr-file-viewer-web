@@ -1,0 +1,17 @@
+.b-close{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 28px; 
+    height: 28px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+        position: relative;
+        right: 3px;
+        bottom: 3px;
+        color: blueviolet;
+    }
+}

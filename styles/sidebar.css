@@ -1,0 +1,56 @@
+.c-t-a1{
+    height: var(--top-bar-length--);;
+    display: flex;
+    align-items: end;
+}
+
+.ls-bar{
+    height: calc(100vh - var(--top-bar-length--));
+}
+
+.ls-dir{
+    padding: 20px 0px;
+}
+
+.t-foldern{
+    font-weight: 600;
+    margin: 5px 20px;
+}
+
+.t-fn-block{
+    height: 40px;
+    cursor: pointer;
+    /* display: flex;
+    align-items: end; */
+}
+
+.t-fn-block:hover{
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 50px 0px 0px 50px;
+    width: var(--side-bar-width--);
+    background-color: var(--directory-hover--);
+}
+
+.i-fn-block{
+    width: 30px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.i-fn-block:hover{
+    cursor: pointer;
+    background-color: var(--directory-hover--);
+}
+
+.i-la{
+    margin: 0px 10px;
+}
+
+.t-filen{
+    font-weight: 600;
+    margin: 0px 30px;
+    padding: 8px 0px;
+    font-size: 15px;
+}

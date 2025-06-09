@@ -1,0 +1,31 @@
+:root{
+    --s1-c1--: rgb(230, 235, 255);
+    --s2-c1--: rgb(190, 200, 255);
+    --s3-c1--: rgb(150, 165, 250);
+    --s4-c1--: rgb(115, 137, 246);
+    --s5-c1--: rgb(85, 110, 220);
+    --s6-c1--: rgb(55, 85, 180);
+    --s7-c1--: rgb(35, 60, 140);
+    /* --s1-c2--: ; */
+    /* --s2-c2--: ; */
+    /* --s3-c2--: ; */
+    --very-light-grey--: rgb(243, 243, 243);
+    --light-grey--: rgb(212, 212, 212);
+    /* --toned-grey--: ; */
+    /* --dark-grey--: ; */
+    --background-color--: white;
+    --directory-hover--: var(--s2-c1--);
+    --top-bar-length--: 40px;
+    --iframe-width--: 1117px;
+    --side-bar-width--: 230px;
+    --canvas-border-radius--: 20px;
+}
+
+
+.b-g{
+    display: grid;
+    grid-template-columns: var(--side-bar-width--) var(--iframe-width--);
+    height: 100vh;
+    background-color: var(--background-color--);
+}
+
