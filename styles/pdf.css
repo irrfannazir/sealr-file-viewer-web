@@ -1,7 +1,7 @@
 #fileCanvas{
     iframe{
         position: relative;
-        width: calc(var(--iframe-width--) - 20px);
+        width: var(--iframe-width--);
         height: calc(100vh - 20px);
         border: none;
     }

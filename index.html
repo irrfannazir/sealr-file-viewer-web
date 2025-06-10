@@ -1,58 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/root.css">
-    <link rel="stylesheet" href="styles/standard.css">
-    <link rel="stylesheet" href="styles/sidebar.css">
-    <link rel="stylesheet" href="styles/topbar.css">
-    <link rel="stylesheet" href="styles/pdf.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <title>Sealr - A Normal File-Viewer</title>
-    <script type="module" src="scripts/fileManager/manager.js"></script>
-    <script type="module" src="scripts/fileManager/changeDirectory.js"></script>
-    <script type="module" src="scripts/iframe/addStyle.js"></script>
-    <script type="module" src="scripts/mobileView/checkRatio.js"></script>
-    <script type="module" src="scripts/styleManager/navigator.js"></script>
+<title>Redirecting...</title>
+<script type="text/javascript">
+  async function redirectBasedOnDevice() {
+    const mobileBreakpoint = 768;
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    console.log(viewportWidth)
+    if(viewportWidth > mobileBreakpoint){
+        window.location.href = "mobile.html"
+    }else{
+        window.location.href = "pc.html";
+    }
+  }
+
+  // Call the function when the page loads
+  window.onload = redirectBasedOnDevice;
+</script>
 </head>
 <body>
-    <div class="b-g">
-        <div class="fs-b1">
-            <!-- The File Manager Bar-->
-            <div class="c-t-a1">
-                <p class="t-foldern" id="folderName"></p>
-            </div>
-            <div class="ls-bar">
-                <div wmodel="dir" class="ls-dir"></div>
-                <div class="s-sb-nav" id="navigatorBar">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <div class="fs-b2">
-            <div class="tb-gb-a1">
-                <div class="c-gl-a k-a1">
-                    <div class="c-gb-a-a">
-                        <div class="c-gl-a-a k-b-close" onclick="closeTheButton()"></div>
-                        <div class="c-gl-a-a k-i"></div>
-                        <div class="c-gl-a-a k-t-name" id="fileName"></div>
-                    </div>
-                </div>
-                <div class="c-gl-a k-a2">
-                    <div class="c-a-details"></div>
-                </div>
-                <div class="c-gl-a k-a3">
-                    <div class="b-share" onclick="showTheSharingOption()"></div>
-                    <div class="b-mb-a1" onclick="showTheFileHandlingOption()"></div>
-                    <div class="b-download" onclick="downloadTheFile()"></div>
-                </div>
-            </div>
-            <div class="f-canvas-a1" id="fileCanvas"></div>
-        </div>
-    </div>
+  <p>If you are not redirected automatically, <a href="index.html">click here for PC version</a> or <a href="indexm.html">click here for mobile version</a>.</p>
 </body>
 </html>
