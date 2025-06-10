@@ -6,7 +6,7 @@ export const getDirectory = function(){
     let result = ""
     let currentFileName = getFileName()
     let root = findElementFromDir(currentFileName);
-    let i = 0;
+    let i = 1;
     if(getFileName() != "root"){
         result += `
             <div class="i-fn-block" onclick="changeDirectory(1, '${root}')">
@@ -18,11 +18,9 @@ export const getDirectory = function(){
         const isFolder = dirs[getFileName()][dir][0] === 'f';
         const name = dirs[getFileName()][dir].slice(1);
         result += `
-            <a id="sideBarNavigatorBlock${i}">
-                <div class="t-fn-block"  onclick="changeDirectory(${isFolder}, '${name}')">
-                    <p class="t-filen">${name}</p>
-                </div>
-            </a>
+            <div class="t-fn-block" id="fileExists${i}" onclick="changeDirectory(${isFolder}, '${name}')">
+                <p class="t-filen">${name}</p>
+            </div>
         `;
         i++;
     }

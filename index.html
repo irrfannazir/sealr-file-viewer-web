@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="styles/topbar.css">
     <link rel="stylesheet" href="styles/pdf.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/navbar.css">
     <title>Sealr - A Normal File-Viewer</title>
     <script type="module" src="scripts/fileManager/manager.js"></script>
     <script type="module" src="scripts/fileManager/changeDirectory.js"></script>
     <script type="module" src="scripts/iframe/addStyle.js"></script>
     <script type="module" src="scripts/mobileView/checkRatio.js"></script>
+    <script type="module" src="scripts/styleManager/navigator.js"></script>
 </head>
 <body>
     <div class="b-g">
@@ -24,6 +26,11 @@
             </div>
             <div class="ls-bar">
                 <div wmodel="dir" class="ls-dir"></div>
+                <div class="s-sb-nav" id="navigatorBar">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
         </div>
         <div class="fs-b2">

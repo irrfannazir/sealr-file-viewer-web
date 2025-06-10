@@ -8,7 +8,7 @@
 }
 
 .fs-b2{
-    background-color: var(--very-light-grey--);
+    background-color: var(--canvas-background-color--);
     border-radius: var(--canvas-border-radius--);
     margin: 10px 0px;
 }

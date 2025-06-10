@@ -4,11 +4,13 @@ import { isldir, cdBackSpace, cdOpenFolder, getCurrentDirectory } from "./direct
 import { openFile } from "../iframe/openFile.js";
 import { getIsMobile } from "../mobileView/checkRatio.js";
 import { activateViewBar } from "../mobileView/activate.js";
+import { refreshBlocks } from "../styleManager/navigator.js";
 
 window.changeDirectory = function(format, fileName){
     if(format == 1){
         setFileName(fileName);
         loadFiles();
+        refreshBlocks();
         if(isldir(fileName)){
             //Closing Folder
             cdBackSpace();

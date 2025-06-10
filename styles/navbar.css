@@ -1,0 +1,63 @@
+:root{
+    --navigator-x-cordinate--: 0px;
+    --navigator-y-cordinate--: 0px;
+}
+
+#navigatorBar{
+    transition: left 0.2s ease-in-out;
+    left: calc(230px + var(--navigator-y-cordinate--));
+}
+
+.ls-bar:has(.t-fn-block:hover) #navigatorBar{
+    transition: left 0.2s ease-in-out;
+    left: calc(0px + var(--navigator-y-cordinate--));
+}
+
+.s-sb-nav {
+    position: relative;
+
+    :is(:nth-child(1), :nth-child(2), :nth-child(3)),
+    :is(:nth-child(1), :nth-child(2), :nth-child(3))::after {
+        z-index: -1;
+        height: var(--side-bar-hieght--);
+        left: 0px;
+        width: var(--side-bar-width--);
+    }
+
+    :nth-child(1), :nth-child(2), :nth-child(3){    
+        position: relative;
+    }
+
+    :nth-child(2) {
+        top: var(--navigator-x-cordinate--);
+        background-color: var(--directory-hover--);
+        border-radius: 30px 0px 0px 30px;
+    }
+
+    :is(:nth-child(1), :nth-child(2), :nth-child(3))::after {
+        content: '';
+        position: absolute;
+    }
+
+    :nth-child(1) {
+        top: var(--navigator-x-cordinate--);
+        background-color: var(--directory-hover--);
+    }
+
+    :nth-child(1)::after {
+        border-radius: 0px 0px 13px 0px;
+        background-color: white;
+    }
+
+
+    :nth-child(3) {
+        top: var(--navigator-x-cordinate--);
+        background-color: var(--directory-hover--);
+    }
+
+    :nth-child(3)::after {
+        background-color: white;
+        border-radius: 0px 13px 0px 0px;
+    }
+}
+
